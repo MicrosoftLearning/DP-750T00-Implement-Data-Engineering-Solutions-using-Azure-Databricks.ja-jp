@@ -31,27 +31,23 @@ lab:
 
 ---
 
-## 🤖 Databricks アシスタント - このラボ全体で使用します。
+## 🤖 Genie Code - このラボ全体で使用してください。
 
-すべての演習において、**Databricks アシスタント**を使用することが想定されており、そうすることをお勧めします。 アシスタントは、ノートブック セルのツール バーで直接使用できます。 これは次の目的で使用されます。
+すべての演習において、**Genie Code** を使用することが想定されており、そうすることをおすすめします。 Genie Code は、ノートブック セルのツール バーで直接使用できます。 これは次の目的で使用されます。
 
 - SQL と PySpark の操作に関する構文を検索する
 - エラー メッセージを説明する
 - 定型コードを生成して適合させる
 - 機能のしくみに関するフォローアップの質問をする
 
-Databricks アシスタントを開くには、 ![アシスタント アイコン](https://raw.githubusercontent.com/MicrosoftLearning/DP-750T00-Implement-Data-Engineering-Solutions-using-Azure-Databricks/refs/heads/main/Allfiles/media/databricks-assistant.svg) をノートブック セルの右側で選択するか、キーボード ショートカットを使用します。
+Genie Code を開くには、次を選択します ![アシスタント アイコン](https://raw.githubusercontent.com/MicrosoftLearning/DP-750T00-Implement-Data-Engineering-Solutions-using-Azure-Databricks/refs/heads/main/Allfiles/media/genie-code.svg) をノートブック セルの右側で選択するか、キーボード ショートカットを使用します。
 
-💡 **演習の各セルには、Databricks アシスタントに直接コピーして開始できる、おすすめのプロンプトが含まれています。**
+💡 **演習の各セルには、Genie Code に直接コピーして開始できる、推奨プロンプトが含まれています。**
 
 ---
-
-## 前提条件
-
-- Azure Databricks ワークスペース (Premium レベル) がプロビジョニングされており、それにアクセスできます
-- ワークスペースで、カタログとボリュームを作成するためのアクセス許可がある**データ エンジニア**または同等のロールを持っている
-- SQL と Python に関する基本的な知識
-
+- 'An **Azure Databricks Premium workspace** provisioned using [Lab 00': 'Set up your Azure Databricks environment](00-setup.md).'
+- 'You have the **Data Engineer** or equivalent role in the workspace, with permission to create catalogs and volumes'
+- Basic familiarity with SQL and Python
 ---
 
 ## ノートブック以外の探索: Lakeflow Connect (省略可能)

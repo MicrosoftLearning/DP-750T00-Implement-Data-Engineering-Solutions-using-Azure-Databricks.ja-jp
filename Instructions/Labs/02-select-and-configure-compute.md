@@ -30,13 +30,13 @@ lab:
 
 ---
 
-## 🤖 このラボ全体で Databricks アシスタントを使用する
+## 🤖 このラボ全体で Genie Code を使用する
 
-すべての演習において、**Databricks アシスタント**を使用することが想定されており、そうすることをお勧めします。 アシスタントは、コードの記述、概念の説明、修正の提案、質問への回答を Databricks ワークスペース内で直接行うのに役立ちます。
+すべての演習で **Genie Code** を使用することが想定されており、そうすることをおすすめします。 Genie Code は、コードの記述、概念の説明、修正の提案、質問への回答を Databricks ワークスペース内で直接行うのに役立ちます。
 
-> **アシスタントを開く方法:** ノートブックの右上のツール バーにある ![アシスタント アイコン](https://raw.githubusercontent.com/MicrosoftLearning/DP-750T00-Implement-Data-Engineering-Solutions-using-Azure-Databricks/refs/heads/main/Allfiles/media/databricks-assistant.svg) アイコンを選択するか、`Ctrl+Shift+P` を押して "Databricks アシスタント" を検索します。
+> **Genie Code を開く方法:** ノートブックの右上のツール バーにある![アシスタント アイコン](https://raw.githubusercontent.com/MicrosoftLearning/DP-750T00-Implement-Data-Engineering-Solutions-using-Azure-Databricks/refs/heads/main/Allfiles/media/genie-code.svg) アイコンを選択するか、`Ctrl+Shift+P` を押して "Genie Code" を検索します。
 
-ノートブック内のすべてのタスクには、アシスタントに直接貼り付けることができる推奨プロンプトが含まれています。 ぜひ活用してください。それがポイントです!
+ノートブック内のすべてのタスクには、Genie Code に直接貼り付けることができる推奨プロンプトが含まれています。 ぜひ活用してください。それがポイントです!
 
 ---
 
@@ -44,7 +44,7 @@ lab:
 
 このラボを開始する前に、次のものがそろっていることを確認してください。
 
-- **Azure Databricks Premium ワークスペース** (既にプロビジョニング済み) へのアクセス。
+- 「[Lab 00: Azure Databricks 環境を設定する](00-setup.md)」を使用してプロビジョニングされた **Azure Databricks Premium ワークスペース**。
 - **メタストア管理者**または**ワークスペース管理者**のアクセス許可か、クラスター作成権限があるユーザー アカウント。
 - Azure Databricks ワークスペース UI に関する基本的な知識。
 
