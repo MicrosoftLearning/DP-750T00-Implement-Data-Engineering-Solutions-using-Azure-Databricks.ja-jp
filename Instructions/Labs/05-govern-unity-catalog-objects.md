@@ -43,17 +43,17 @@ lab:
 
 ---
 
-## 🤖 このラボ全体で Databricks アシスタントを使用する
+## 🤖 このラボ全体で Genie Code を使用する
 
-このラボでは、**Databricks アシスタントを常に**使用することが**想定されており、そうすることをお勧めします**。 ノートブック内のすべての演習セルには、アシスタント パネルに直接貼り付けることができる推奨プロンプトが含まれています。
+このラボでは、**Genie Code を常に**使用することが**想定されており、そうすることをおすすめします**。 ノートブック内のすべての演習セルには、Genie Code パネルに直接貼り付けることができる推奨プロンプトが含まれています。
 
-Databricks アシスタントを開くには、 ![アシスタント アイコン](https://raw.githubusercontent.com/MicrosoftLearning/DP-750T00-Implement-Data-Engineering-Solutions-using-Azure-Databricks/refs/heads/main/Allfiles/media/databricks-assistant.svg) をノートブック セルの右側で選択するか、ツール バーに表示されているキーボード ショートカットを押します。
+Genie Code を開くには、次を選択します ![アシスタント アイコン](https://raw.githubusercontent.com/MicrosoftLearning/DP-750T00-Implement-Data-Engineering-Solutions-using-Azure-Databricks/refs/heads/main/Allfiles/media/genie-code.svg) をノートブック セルの右側でクリックするか、ツール バーに表示されているキーボード ショートカットを押します。
 
-> 💡**ヒント:** アシスタントの出力を無条件にコピーして貼り付けることはしないでください。 それをよく読んで理解し、目の前の作業に合わせて調整してください。 アシスタントは思考を加速させるためのツールであり、それを置き換えるものではありません。
+> 💡**ヒント:** Genie Code の出力を無条件にコピーして貼り付けることはしないでください。 それをよく読んで理解し、目の前の作業に合わせて調整してください。 Genie Code は思考を加速させるためのツールであり、あなたの考えに置き換わるものではありません。
 
 ---
 'Before starting this lab, ensure you have':
-  - Access to an **Azure Databricks Premium workspace** (already provisioned for you).
+  - 'An **Azure Databricks Premium workspace** provisioned using [Lab 00': 'Set up your Azure Databricks environment](00-setup.md).'
   - An active **Unity Catalog metastore** attached to the workspace.
   - The **CREATE CATALOG** privilege on the metastore.
   - 'Familiarity with basic SQL (CREATE TABLE, SELECT, ALTER TABLE).'

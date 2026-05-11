@@ -5,7 +5,7 @@ lab:
   module: Explore Azure Databricks
   module-url: 'https://learn.microsoft.com/training/modules/explore-azure-databricks/'
   notebook: 'https://github.com/MicrosoftLearning/DP-750T00-Implement-Data-Engineering-Solutions-using-Azure-Databricks/blob/main/Allfiles/01-explore-azure-databricks.ipynb'
-  description: このラボでは、Azure Databricks ワークスペースの UI を調べて、サンプル データセットを Unity Catalog ボリュームにアップロードし、Python、SQL マジック コマンド、Markdown などのノートブック機能を操作します。 全体を通して Databricks アシスタントを使用し、架空の公共交通機関である CityMoves Transit のコンテキストでコードの生成と調整を行います。
+  description: このラボでは、Azure Databricks ワークスペースの UI を調べて、サンプル データセットを Unity Catalog ボリュームにアップロードし、Python、SQL マジック コマンド、Markdown などのノートブック機能を操作します。 全体を通して Genie Code を使用し、架空の公共交通機関である CityMoves Transit のコンテキストでコードの生成と調整を行います。
   duration: 30 minutes
   level: 200
   islab: true
@@ -27,7 +27,7 @@ lab:
 
 ---
 'Before starting this lab, ensure you have':
-  - Access to an **Azure Databricks Premium workspace** (already provisioned for you).
+  - 'An **Azure Databricks Premium workspace** provisioned using [Lab 00': 'Set up your Azure Databricks environment](00-setup.md).'
   - Familiarity with basic Azure portal navigation.
   - No prior Databricks experience is required.
 ---
@@ -50,11 +50,11 @@ lab:
 
 3. 上部の **[検索]** バーを使って `routes` を検索します。 まだ何も表示されませんが、後でインジェストが済んだらこれを使ってデータ資産を検索します。
 
-### タスク 2: Databricks アシスタントを調べる
+### タスク 2: Genie コードを探索する
 
-**Databricks アシスタント**は、Azure Databricks に直接組み込まれている、AI を搭載したペアのプログラマーです。 コードの生成、エラーの説明、改善点の提案、質問への回答のすべてを、ユーザー インターフェイスを離れることなく行えます。 このラボと移行のすべてのラボを通して、それを使うことが想定されており、そうすることをお勧めします。
+**Genie Code** は、Azure Databricks に直接組み込まれている、AI を搭載したペアのプログラマーです。 コードの生成、エラーの説明、改善点の提案、質問への回答のすべてを、ユーザー インターフェイスを離れることなく行えます。 このラボと移行のすべてのラボを通して、それを使うことが想定されており、そうすることをお勧めします。
 
-1. Azure Databricks のホーム ページで、ページの右上隅にある **[Databricks アシスタント]** アイコン (![assistant-icon](https://raw.githubusercontent.com/MicrosoftLearning/DP-750T00-Implement-Data-Engineering-Solutions-using-Azure-Databricks/refs/heads/main/Allfiles/media/databricks-assistant.svg)) をクリックして、アシスタント パネルを開きます。
+1. Azure Databricks のホーム ページで、ページの右上隅にある **[Genie Code]** アイコン (![アシスタント アイコン](https://raw.githubusercontent.com/MicrosoftLearning/DP-750T00-Implement-Data-Engineering-Solutions-using-Azure-Databricks/refs/heads/main/Allfiles/media/genie-code.svg)) をクリックして、Genie Code パネルを開きます。
 
 2. 次のプロンプトを入力し、応答を確認します。
 
@@ -62,9 +62,9 @@ lab:
     What can I do with Azure Databricks as a data engineer?
     ```
 
-3. 回答を確認します。 アシスタントがコンテキストに応じたワークスペース対応のガイダンスをどのように提供するのかに注目してください。
+3. 回答を確認します。 Genie Code がコンテキストに応じたワークスペース対応のガイダンスをどのように提供するのかに注目してください。
 
-> 💡 **これ以降、コードまたは SQL の記述を求められたら常に、Databricks アシスタントをお使いください。何が必要かを平易な言葉で説明し、提案を調整して実行します。**
+> 💡 **これ以降、コードまたは SQL の記述を求められたら常に、Genie Code をお使いください。何が必要かを平易な言葉で説明し、提案を調整して実行します。**
 
 ### タスク 3: サンプルの輸送データセットをアップロードする
 

@@ -29,22 +29,18 @@ lab:
 
 ---
 
-## 🤖 このラボ全体で Databricks アシスタントを使用する
+## 🤖 このラボ全体で Genie Code を使用する
 
-すべての演習で **Databricks アシスタント**を使用することが想定されており、そうすることをお勧めします。 これを使用して、提案の取得、エラーの説明、定型句の生成、API の探索を行います。
+すべての演習で **Genie Code** を使用することが想定されており、そうすることをおすすめします。 これを使用して、提案の取得、エラーの説明、定型句の生成、API の探索を行います。
 
-Databricks アシスタントを開くには、 ![アシスタント アイコン](https://raw.githubusercontent.com/MicrosoftLearning/DP-750T00-Implement-Data-Engineering-Solutions-using-Azure-Databricks/refs/heads/main/Allfiles/media/databricks-assistant.svg) をノートブック セルの右側で選択するか、キーボード ショートカットを使用します。
+Genie Code を開くには、次を選択します ![アシスタント アイコン](https://raw.githubusercontent.com/MicrosoftLearning/DP-750T00-Implement-Data-Engineering-Solutions-using-Azure-Databricks/refs/heads/main/Allfiles/media/genie-code.svg) をノートブック セルの右側で選択するか、キーボード ショートカットを使用します。
 
 > **プロンプトの例:** *"booking_id 列の DataFrame を重複除去し、rate_per_night が 0 以下の行を除外する PySpark ステートメントを記述するのを手伝ってください。"*
 
 ---
-
-## 前提条件
-
-- **Azure Databricks Premium ワークスペース**が既にプロビジョニングされていて、それにアクセスできる。
-- Unity Catalog でカタログとスキーマを作成するためのアクセス許可がある。
-- PySpark と Spark SQL に関する基本的な知識。
-
+- 'An **Azure Databricks Premium workspace** provisioned using [Lab 00': 'Set up your Azure Databricks environment](00-setup.md).'
+- You have permission to create catalogs and schemas in Unity Catalog.
+- Basic familiarity with PySpark and Spark SQL.
 ---
 
 ## パート 1: ノートブックの演習 (medallion アーキテクチャ + エラー処理 + パラメーター)
