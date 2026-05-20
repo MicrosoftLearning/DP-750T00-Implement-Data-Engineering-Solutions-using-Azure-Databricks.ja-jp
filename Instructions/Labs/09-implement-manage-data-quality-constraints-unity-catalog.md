@@ -125,30 +125,29 @@ DESCRIBE TABLE insurance_lab.bronze.claims_raw;
 1. Databricks ワークスペースの左側のサイド バーで **[ワークスペース]** をクリックします。
 2. ラボのノートブックを保存したフォルダーに移動します。
 3. **[⋮]** (ケバブ) メニューをクリックするか、フォルダーを右クリックして、**[インポート]** を選択します。
-4. **[URL]** を選択し、URL (`https://raw.githubusercontent.com/MicrosoftLearning/DP-750T00-Implement-Data-Engineering-Solutions-using-Azure-Databricks/refs/heads/main/Allfiles/09-implement-manage-data-quality-constraints-unity-catalog.py`) を入力し、**[インポート]** をクリックします。
+4. **[URL]** を選択し、URL (`https://raw.githubusercontent.com/MicrosoftLearning/DP-750T00-Implement-Data-Engineering-Solutions-using-Azure-Databricks/refs/heads/main/Allfiles/09-implement-manage-data-quality-constraints.py`) を入力し、**[インポート]** をクリックします。
 5. ファイルは Python ソース ファイルとしてワークスペースに表示されます。次のステップ用にパスを書き留めてください。
 
 **パイプラインを作成します。**
 
 1. Databricks ワークスペースの左側のサイド バーで **[ジョブとパイプライン]** をクリックします。
 2. **[ETL パイプラインの作成]** (Python) をクリックします。
-3. 次の設定でパイプラインを構成します。
+3. **歯車 (⚙️) アイコン**をクリックしてパイプライン設定ダイアログを開き、次の設定でパイプラインを構成します。
 
-   | 設定        | Value                                                                                              |
-   | -------------- | -------------------------------------------------------------------------------------------------- |
-   | パイプライン名  | **ClearCover Claims Quality Pipeline**                                                             |
-   | パイプライン モード  | **トリガー**                                                                                      |
-   | ソース コード    | インポートした `09-implement-manage-data-quality-constraints-unity-catalog.py` ファイルを参照      |
-   | ターゲット カタログ | **insurance_lab**、スキーマ **silver**                                                               |
-   | Compute        | **サーバーレス**                                                                                     |
+   | 設定        | Value                                  |
+   | -------------- | -------------------------------------- |
+   | パイプライン名  | **ClearCover Claims Quality Pipeline** |
+   | パイプライン モード  | **トリガー**                          |
+   | ターゲット カタログ | **insurance_lab**、スキーマ **silver**   |
+   | Compute        | **サーバーレス**                         |
 
-4. **Create** をクリックしてください。
+4. パイプライン エディターで、**左側のペイン** (アセット ブラウザー) を見つけます。 メニューを開き、**[インポート]** を選択し、インポートした `09-implement-manage-data-quality-constraints.py` ファイルを参照して、パイプラインのソース コードとして追加します。
 
 インポートしたパイプライン ファイルを開きます。これは演習 3 - 5 で開いたままにします。 次に、それを編集してデータ品質制約を追加します。
 
 ### タスク 3.1: claims_validated() に NULL 値の許容と状態の期待値を追加する
 
-09-implement-manage-data-quality-constraints-unity-catalog.py を開き、*claims_validated()* 関数に次の期待値を追加します。 `@dp.table(...)` と `def claims_validated():` の間にすべてのデコレーターを配置します。
+09-implement-manage-data-quality-constraints.py を開き、*claims_validated()* 関数に次の期待値を追加します。 `@dp.table(...)` と `def claims_validated():` の間にすべてのデコレーターを配置します。
 
 | 想定される名前  | 条件                                 | アクション        |
 | ----------------- | ----------------------------------------- | ------------- |
@@ -220,7 +219,7 @@ ClearCover は複数のパートナー ブローカーから請求ファイル�
 
 ### タスク 5.1: 自動ローダーにレスキューのスキーマ進化モードを実装する
 
-09-implement-manage-data-quality-constraints-unity-catalog.py 内の claims_rescued() 関数を完成させます。
+09-implement-manage-data-quality-constraints.py 内の claims_rescued() 関数を完成します。
 
 自動ローダーで spark.readStream (cloudFiles 形式) を使用して、次から CSV ファイルを読み取ります。
 
@@ -254,7 +253,7 @@ ClearCover は複数のパートナー ブローカーから請求ファイル�
 
 ### タスク 6.1: パイプライン ファイルを保存する
 
-続行する前に、ワークスペース エディターで 09-implement-manage-data-quality-constraints-unity-catalog.py に対するすべての変更を保存済みであることを確認します。
+続行する前に、ワークスペース エディターで 09-implement-manage-data-quality-constraints.py に対するすべての変更が保存済みであることを確認します。
 
 ### タスク 6.2: パイプラインを実行する
 
